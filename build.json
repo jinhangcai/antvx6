@@ -1,0 +1,35 @@
+{
+  "alias": {},
+  "define": {},
+  "externals": {},
+  "hash": "contenthash",
+  "outputDir": "dist",
+  "plugins": [
+    [
+      "build-plugin-css-assets-local",
+      {
+        "outputPath": "assets",
+        "relativeCssPath": "../"
+      }
+    ],
+    "./plugins/webpack-resolve.js"
+  ],
+  "babelPresets": [
+    [
+      "env",
+      {
+        "modules": "umd"
+      }
+    ]
+  ],
+  "publicPath": "./",
+  "devPublicPath": "./",
+  "terserOptions": {
+    "compress": {
+      "unused": true,
+      "drop_console": false
+    }
+  },
+  "mpa": true,
+  "proxy": {}
+}

@@ -1,0 +1,100 @@
+.InspectionLead {
+  box-sizing: border-box;
+  padding: 15px 20px 15px 20px;
+  .lineRight {
+    border-right: 2px solid #D1D3D8;
+  }
+  .flexMin {
+    width: 100%;
+    display: flex;
+    .flexLeft {
+      width: 328px;
+      height: 450px;
+      //padding-right:16px;
+      position: relative;
+    }
+    .add {
+      font-size: 14px;
+      color: #428DF5;
+      position: absolute;
+      right:12px;
+      top:12px;
+      cursor: pointer;
+    }
+    .flexRight {
+      flex:1;
+      margin-left: 15px;
+      border-left: 1px solid #D1D3D8;
+      padding: 10px 20px 16px 16px;
+    }
+  }
+  .TreeMin{
+    overflow: hidden;
+    .treeW {
+      width:100%;
+      position:relative;
+      .disShow {
+        display: none;
+      }
+      .titlebg {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      &:hover > .disShow {
+        display: block;
+      }
+      .btn {
+        display: inline-block;
+        vertical-align: top;
+        position:absolute;
+        right:0;
+        top:0;
+        span {
+          margin-right: 12px;
+          &:last-child{
+            margin-right:0;
+          }
+        }
+      }
+    }
+    .recommend{
+      background: #ecf3fe;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      height: 34px;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      padding:10px;
+      -webkit-transition: background .3s;
+      transition: background .3s;
+      width: 100%;
+      align-items: center;
+      display: flex;
+      outline: none;
+      &:hover {
+        background: #f4f6f9;
+      }
+    }
+  }
+  :global {
+    .titleW {
+      width: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .ant-tree .ant-tree-treenode.ant-tree-treenode-selected {
+      .titleW {
+        color: #428DF5 ;
+        font-size: 14px;
+        font-weight: bold;
+        width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+      }
+    }
+  }
+}

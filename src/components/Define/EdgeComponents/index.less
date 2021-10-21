@@ -1,0 +1,100 @@
+.Filter-Button, .indicator-node, .aggregation-node {
+  position: relative;
+  .filter-btn {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 5px;
+    width: 28px;
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    img {
+      display: block;
+      margin:0 auto;
+    }
+    // background-image: url("../../../assets/imgs/filter.png");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: 14px 14px;
+    &:hover {
+      background: #FFFFFF;
+      border: 1px solid #428DF5;
+      box-shadow: 0px 0px 10px 0px rgba(66,141,245,1);
+       .node-icon {
+        opacity: 1;
+      }
+    }
+  }
+  .node-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(185, 190, 198, 1);
+    border-radius: 50%;
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .Filter-Button-Tool{
+
+    .change {
+      background: url("../../../assets/imgs/change1.png");
+      &:hover {
+        background: url("../../../assets/imgs/change.png");
+      }
+    }
+    .copy {
+      background: url("../../../assets/imgs/copy1.png");
+      &:hover {
+        background: url("../../../assets/imgs/copy.png");
+      }
+    }
+    .remark {
+      background: url("../../../assets/imgs/remark1.png");
+      &:hover {
+        background: url("../../../assets/imgs/remark.png");
+      }
+    }
+    .delete {
+      background: url("../../../assets/imgs/delete1.png");
+      &:hover {
+        background: url("../../../assets/imgs/delete.png");
+      }
+    }
+    .SetOperation {
+      background: url("../../../assets/imgs/oper1.png");
+      &:hover {
+        background: url("../../../assets/imgs/oper.png");
+      }
+    }
+    .splitGather {
+      background: url("../../../assets/imgs/split1.png");
+      &:hover {
+        background: url("../../../assets/imgs/split.png");
+      }
+    }
+    .output {
+      background: url("../../../assets/imgs/output1.png");
+      &:hover {
+        background: url("../../../assets/imgs/output.png");
+      }
+    }
+    .Imgs {
+      width: 10px;
+      height: 10px;
+      display: block;
+      margin: 4px auto 0;
+      background-size: 100% !important;
+    }
+  }
+  .node-icon1 {
+    opacity: 1;
+  }
+  &:hover {
+    .node-icon2 {
+      opacity: 1;
+    }
+  }
+}

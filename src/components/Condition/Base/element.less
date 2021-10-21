@@ -1,0 +1,17 @@
+.condition-element {
+  display: inline-block;
+  line-height: 20px;
+  user-select: none;
+  margin: 0 5px;
+
+  &.bracket-element, &.number-element, &.logical-element, &.relational-element {
+    color: #A837B4;
+    font-weight: 700;
+  }
+
+  &.number-element {
+    color: #333;
+    user-select: text;
+    -ms-ime-mode: disabled;
+  }
+}

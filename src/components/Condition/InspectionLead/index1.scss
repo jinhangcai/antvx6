@@ -1,0 +1,234 @@
+
+.condition{
+  //padding: 30px;
+  border: 1px solid #ccc;
+  display:flex;
+  height: 650px;
+  flex-flow: row nowrap;
+  .ant-modal{
+    top:0;
+  }
+  .condition-left{
+    width: 486px;
+    border-right:1px solid #ccc;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    position:relative;
+    .condition-left-search{
+      //display: flex;
+      padding:10px;
+      margin-top:-12px;
+      box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+      .ant-checkbox-group{
+        display: initial;
+      }
+      .condition-left-label{
+        padding: 0 0 16px 0;
+      }
+      .ant-checkbox-group-item{
+        margin-right:6px;
+      }
+    }
+    .ant-collapse>.ant-collapse-item>.ant-collapse-header{
+      padding-bottom: 0;
+    }
+    .ant-collapse-ghost>.ant-collapse-item>.ant-collapse-content>.ant-collapse-content-box{
+      padding-top: 0;
+      padding-bottom: 0;
+      border-top: 1px solid #ccc;
+    }
+    .ant-collapse>.ant-collapse-item:last-child, .ant-collapse>.ant-collapse-item:last-child>.ant-collapse-header{
+      padding-bottom:0;
+    }
+    .ant-collapse-header{
+      color: #333;
+      font-weight: bold;
+    }
+    .listItemMeta{
+      cursor: pointer;
+      &:hover{
+        background: #F4F6F9;
+      }
+    }
+    .ant-list-item{
+      padding: 5px 0;
+    }
+    .popList{
+      overflow-y: scroll;
+      height: 508px;
+      .ant-list-item-meta-description{
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+    .tabkey2{
+      position: relative;
+      .icon{
+        margin-right: 8px;
+      }
+      .popList-type{
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        width: 95%;
+      }
+      .type-area{
+        position:absolute;
+        right: 0;
+        z-index: 999;
+        list-style: none;
+      }
+      .ant-list-item{
+        border-bottom:none;
+        padding:6px 12px;
+        position:relative;
+        .iconfont{
+          position:absolute;
+          right:12px;
+          top:12px;
+          z-index: 99;
+          display: none;
+        }
+        &:hover{
+          background: #F4F6F9;
+          color: #428DF5;;
+          cursor: pointer;
+          .iconfont{
+            display: block;
+          }
+        }
+      }
+    }
+    .tabkey3{
+      .ant-collapse-content>.ant-collapse-content-box{
+        padding: 0;
+      }
+      .ant-list-bordered{
+        border:none;
+      }
+    }
+    .name{
+     li{
+       list-style: none;
+       padding: 10px;
+       position:relative;
+       .icon{
+         float: right;
+         margin-right: 5px;
+       }
+     }
+    }
+    .treeW{
+      .icon{
+        margin-right: 8px;
+      }
+      .treeW-title{
+        &:hover{
+          color: #428DF5;
+        }
+      }
+    }
+  }
+
+  .condition-right{
+    flex: 1;
+    position: relative;
+    overflow-x: scroll;
+    .condition-right-Top{
+      padding: 10px 13px;
+      border-bottom: 1px solid #DFE1E6;
+      margin-left:-10px;
+      .ant-btn-primary, .ant-select-selector{
+        background: #ECF3FE !important;
+        border:none;
+        &:hover{
+          border: 1px solid #428df5;
+        }
+      }
+      .ant-select-selection-item{
+        color: #428DF5;
+      }
+      .ant-select-arrow{
+        color: #428DF5 ;
+      }
+      .ant-btn{
+        margin-right:8px;
+      }
+      .addType{
+        float: right;
+        border: 1px solid #428df5;
+        background:#fff !important;
+        &:hover{
+          background: #ECF3FE !important;
+        }
+      }
+    }
+    .condition-right-min{
+      padding: 12px;
+    }
+    .condition-right-bottom{
+      width: calc(100% + 10px);
+      background: #F9FAFD;
+      margin-left: -15px;
+      position:absolute;
+      transform: translate(50%,00%);
+      left: -50%;
+      bottom:0;
+      .condition-right-bottom-illegal{
+        padding: 12px 8px;
+      }
+      .condition-right-bottom-legal{
+        p{
+          cursor: pointer;
+        }
+        .Num{
+          color: #428DF5;
+        }
+      }
+      .iconfont{
+        margin-right:4px;
+      }
+    }
+  }
+  .condition-line{
+    position:relative;
+    width:10px;
+    cursor: pointer;
+    .locker{
+      position:absolute;
+      left:0;
+      top:50%;
+      transform: translate(50%,50%);
+      width:3px;
+      height: 16px;
+      border-left: 1px solid #D1D3D8 ;
+      border-right: 1px solid #D1D3D8 ;
+    }
+  }
+
+  .ant-tabs-nav-wrap{
+    padding-left: 10px;
+  }
+  .condition-left .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box{
+    border-top:none;
+  }
+}
+.ToolTop{
+  padding: 12px;
+  .ToolTop-title{
+    font-weight: 700;
+    color: #333333;
+  }
+  .ToolTop-describe{
+    //padding-top: 6px;
+  }
+  .ToolTop-desc{
+    //padding-top: 6px;
+    font-weight: 400;
+    color: #333333;
+  }
+}
+
+

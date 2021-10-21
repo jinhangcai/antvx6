@@ -1,0 +1,170 @@
+@import "./EdgeComponents/index";
+@import "./NodeComponents/index";
+@import "../Remarks/index";
+.model-define {
+  width: 100vw;
+  height: 100vh;
+  // min-width: 800px;
+  // min-height: 600px;
+
+  .action-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .graph {
+    display: flex;
+    height: calc(100vh - 50px);
+
+    .addon-bar {
+      width: 86px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+      .addon-title {
+        font-weight: 700;
+        color: #666;
+        line-height: 44px;
+        text-align: center;
+      }
+
+      .addon-stencil {
+        position: relative;
+        height: calc(100% - 50px);
+
+        .x6-widget-stencil-title {
+          display: none;
+        }
+
+        .x6-widget-stencil {
+          background-color: #fff;
+          .x6-graph{
+            margin: 0 auto;
+          }
+        }
+
+        .x6-widget-stencil-title {
+          background-color: #fff;
+        }
+        .x6-widget-stencil-content {
+          top: -20px;
+
+          .react-node {
+            cursor: move;
+          }
+        }
+
+        .x6-widget-stencil-group-title {
+          background-color: #fff !important;
+        }
+
+        .x6-widget-transform {
+          margin: -1px 0 0 -1px;
+          padding: 0px;
+          border: 1px solid #239edd;
+        }
+
+        .x6-widget-transform > div {
+          border: 1px solid #239edd;
+        }
+
+        .x6-widget-transform > div:hover {
+          background-color: #3dafe4;
+        }
+
+        .x6-widget-transform-active-handle {
+          background-color: #3dafe4;
+        }
+
+        .x6-widget-transform-resize {
+          border-radius: 0;
+        }
+
+        .x6-widget-selection-inner {
+          border: 1px solid #239edd;
+        }
+
+        .x6-widget-selection-box {
+          opacity: 0;
+        }
+        .addon-hint {
+          width: 154.5px;
+          padding: 6px;
+          background: #FFFFFF;
+          border: 1px solid #E3E4E8;
+          box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
+          position: absolute;
+          z-index: 2;
+          right: -164px;
+          top: 0;
+          .addon-hint-hole {
+            position: relative;
+            p {
+              contain: '';
+              width: 0;
+              height: 0;
+              border-top: 5px solid transparent;
+              border-right: 10px solid #fff;
+              border-bottom: 5px solid transparent;
+              position: absolute;
+              left: -16px;
+              top: 16px;
+            }
+          }
+          span {
+            color: #418CF5;
+            cursor: pointer;
+          }
+        }
+        .addon-list-btn {
+          position: absolute;
+          bottom: 50px;
+          left: 0;
+          z-index: 2;
+          width: 100%;
+          li {
+            cursor: pointer;
+            &:first-child {
+              border-top: 1px solid #ccc;
+              padding-top: 10px;
+            }
+            img {
+              display: block;
+              margin: 0 auto;
+            }
+            p{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .operations-area {
+      flex: 1;
+    }
+  }
+
+
+}
+
+.x6-node foreignObject > body > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.x6-edge-label foreignObject {
+  overflow: visible;
+}
+
+.ed-tooltip-placement-top, .ed-tooltip-placement-bottom{
+  max-width:fit-content;
+  max-height: fit-content;
+}
+.ed-select-dropdown{
+  z-index: 9999;
+}

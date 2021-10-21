@@ -1,0 +1,23 @@
+@import "~efg-design-rth/dist/index.css";
+@import "~syfed-ui/lib/index.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+#ice-container {
+  width: 100vw;
+  height: 100vh;
+}
+
